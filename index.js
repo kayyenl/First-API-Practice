@@ -10,8 +10,9 @@ async function main() {
     userListElem.innerHTML = usersData.map((user) => userHTMLString(user)).join("")
 }
 
-function showUserPosts(user) {
-    console.log(user)
+function showUserPosts(id) {
+    localStorage.setItem("id", id); //kind of like a hash table
+    window.location.href = `${window.location.origin}/user.html`;
 }
 
 function userHTMLString(user) {
