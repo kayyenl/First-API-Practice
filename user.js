@@ -1,7 +1,7 @@
 const postListElem = document.querySelector('.post-list')
+const idNumber = localStorage.getItem("id")
 
  function main() {
-    const idNumber = localStorage.getItem("id")
     displayPosts(idNumber)
  }
 
@@ -25,5 +25,5 @@ const postListElem = document.querySelector('.post-list')
       </div>`
     }).join("")
  }
- 
+
  main()
